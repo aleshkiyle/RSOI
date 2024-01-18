@@ -25,7 +25,7 @@ options = list(map(lambda it: it["title"], operation_types))
 operation = st.sidebar.selectbox('Тип операции', options=options, index=None, on_change=None)
 st.write("## Аналитика работы веб-сервиса")
 
-# Валидация
+# Проверка нижней границе конца периода
 if start_date >= end_date:
     st.error("Выбранный период некорректен. Начало периода должно быть раньше конца периода, как минимум на один день")
     st.stop()
