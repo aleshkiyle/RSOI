@@ -60,7 +60,7 @@ def get_log_count_by_day_splitting_by_interval(days: list, interval: int, logs: 
 
 def extract_logs_for_operation_by_title(operation_types: list, operation: str, logs_group_by_operation: dict):
     operation_type_id = extract_operation_type_id_by_title(operation_types, operation)
-    if operation_type_id in logs_group_by_operation:
+    if operation_type_i in logs_group_by_operation:
         return logs_group_by_operation[operation_type_id]
     else:
         return []
